@@ -49,8 +49,8 @@ li a:hover {
     border: gray 2px solid;
     display: flex;
     justify-content: left;
-    margin-top: 3%;
-    margin-left: 3%;
+/* margin-top: 3%;P
+    margin-left: 3%; */
 }
 
 .conceito {
@@ -63,6 +63,7 @@ li a:hover {
     padding: 20px;
     border-radius: 30px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    margin-left: 3%;
 }
 
 .conceito h1 {
@@ -90,7 +91,8 @@ li a:hover {
     background-color: #D4CCCB;  
     border-radius: 30px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    margin-left: 200px;
+    margin-left: 10%;
+
 }
 
 .musica h1{
@@ -113,7 +115,7 @@ li a:hover {
     display: flex;
     justify-content: center;
     background-image: url(imagens/gif\ -\ sem\ m.gif);
-    background-size: 200vh;
+    background-size: 100%;
 }
 
 .box {
