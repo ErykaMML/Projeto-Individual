@@ -10,6 +10,7 @@
 
 </head>
 
+
 <body>
     <!-- home -->
     <div id="pai">
@@ -65,9 +66,51 @@
                 </p>
             </div>
     </div>
+
+    <div id="graficos">
+        <div>
+        <canvas id="grafico"></canvas>
+    </div>
+
+   
    
 </body>
 
 </html>
 
-<style></style>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+    const labels = [
+      'Pop',
+      'Rock',
+      'R&B',
+      'Hip-hop',
+      'Eletrônica',
+      'Funk',
+      'Clássica',
+      'Reggaeton'
+    ];
+  
+    const data = {
+      labels: labels,
+      datasets: [{
+        label: 'Gêneros mais ouvidos',
+        backgroundColor: 'rgb(255, 99, 132)',
+        borderColor: 'rgb(255, 99, 132)',
+        data: [0, 10, 5, 2, 20, 30, 45],
+      }]
+    };
+  
+    const config = {
+      type: 'bar',
+      data: data,
+      options: {}
+    };
+  </script>
+  <script>
+    const myChart = new Chart(
+      document.getElementById('grafico'),
+      config
+    );
+  </script>

@@ -123,3 +123,9 @@ li a:hover {
     padding: 20px;
     border-radius: 30px;
 }
+
+#graficos {
+    border: gold 2px solid;
+    width: 50%;
+    margin-left: 500px;
+}
