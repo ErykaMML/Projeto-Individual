@@ -10,7 +10,7 @@
     width: auto;
     /* background-image:url(imagens/gif-\ preto.gif); */
     background-image: url(imagens/gif\ -\ sem\ m.gif);
-    background-size: 200vh;
+    background-size: 100%;
 
     
     /* background-color: black; */
@@ -21,7 +21,7 @@
 .navbar {
     /* border: red 2px solid; */
     display: flex;
-    height: 10vh;
+    height: 10%;
     justify-content: flex-end;
     /* background-color:  #130348; roxinho bunito */
     align-items: center;
@@ -30,7 +30,7 @@
 }
 
 .navbar li {
-    margin-right: 40px;
+    margin-right: 2%;
     list-style: none;
     font-size: 23px;
 }
@@ -49,8 +49,8 @@ li a:hover {
     border: gray 2px solid;
     display: flex;
     justify-content: left;
-    margin-top: 50px;
-    margin-left: 50px;
+    margin-top: 3%;
+    margin-left: 3%;
 }
 
 .conceito {
