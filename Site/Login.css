@@ -1,0 +1,73 @@
+* {
+    border: 0;
+    margin: 0;
+    font-family: 'Times New Roman', serif;
+}
+
+#pai  {
+    border: green 2px solid;
+    height: 99.6vh;
+    width: auto;
+    /* background-image:url(imagens/gif-\ preto.gif); */
+    background-image: url(imagens/gif\ -\ sem\ m.gif);
+    background-size: 100%;
+
+    
+    /* background-color: black; */
+    /* background: rgb(4,3,17);
+    background: linear-gradient(90deg, rgba(4,3,17,1) 0%, rgba(74,41,182,1) 50%, rgba(4,3,17,1) 100%); */
+}
+
+.navbar {
+    /* border: red 2px solid; */
+    display: flex;
+    height: 10%;
+    justify-content: flex-end;
+    /* background-color:  #130348; roxinho bunito */
+    align-items: center;
+    margin-bottom: 2%;
+    background: rgba(19,3,72,1, 0.10);
+}
+
+.navbar li {
+    margin-right: 2%;
+    list-style: none;
+    font-size: 23px;
+}
+
+.navbar a {
+    text-decoration:none;
+    color: white;
+}
+
+li a:hover {
+    color: gray;
+    transition: 0.3s;
+}
+
+#caixa {
+    border: white 2px solid;
+    display: flex;
+    justify-content: center;
+}
+
+.login {
+    border: red 2px solid;
+    width: 15%;
+    height: 50vh;
+    background-color: antiquewhite;
+    display: flex;
+   justify-content: center;
+    flex-direction: column;
+}
+
+.email {
+    border: black 2px solid;
+}
+
+.senha {
+    border: black 2px solid;
+}
+
+
+
