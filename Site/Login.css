@@ -9,8 +9,9 @@
     height: 99.6vh;
     width: auto;
     /* background-image:url(imagens/gif-\ preto.gif); */
-    background-image: url(imagens/gif\ -\ sem\ m.gif);
+    /* background-image: url(imagens/gif\ -\ sem\ m.gif); */
     background-size: 100%;
+    background-color: black;
 
     
     /* background-color: black; */
@@ -23,10 +24,10 @@
     display: flex;
     height: 10%;
     justify-content: flex-end;
-    /* background-color:  #130348; roxinho bunito */
+    background-color: rgba(19, 4, 32, 0.5);
+    /* background-color: rgba(19,3,72,1, 0.5);  */
     align-items: center;
     margin-bottom: 2%;
-    background: rgba(19,3,72,1, 0.10);
 }
 
 .navbar li {

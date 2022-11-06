@@ -10,15 +10,17 @@
 
 </head>
 
-
 <body>
     <!-- home -->
     <div id="pai">
         <div class="navbar">
+            <div class="logo">
+                <img src="imagens/Logo - logo.png" height="80px">
+            </div>
             <!-- <img src="" alt=""> -->
             <li><a href=""> Home</a></li>
             <li><a style="color: white">|</a></li>
-            <li><a href=""> Login</a></li>
+            <li><a href="login.html"> Login</a></li>
             <li><a style="color: white">|</a></li>
             <li><a href=""> Cadastro</a></li>
         </div>
@@ -34,83 +36,81 @@
             <div class="musica">
                 <h1>O que é música</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorem, repellendus maiores ullam
-                    nobis eum cupiditate asperiores? Vero quia distinctio ullam facilis accusantium, sunt dolorem quam,
-                    perferendis, fugit dignissimos quaerat!</p>
+                nobis eum cupiditate asperiores? Vero quia distinctio ullam facilis accusantium, sunt dolorem quam,
+                 perferendis, fugit dignissimos quaerat!
+                </p>
             </div>
         </div>
+
+        <div id="estilos">
+            <div class="pop">
+                <a href="">
+                    <div class="box">
+
+                        <h1>Pop</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorem, repellendus maiores ullam
+                        </p>
+                        <span>
+                            Clique aqui e saiba mais
+                        </span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="blue">
+                <a href="">
+                    <div class="box">
+
+                        <h1>R&B</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorem, repellendus maiores ullam
+                        </p>
+                        <span>
+                            Clique aqui e saiba mais
+                        </span>
+                    </div>
+                </a>
+            </div>
+            <div class="funk">
+                <a href="">
+                    <div class="box">
+
+                        <h1>Funk</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorem, repellendus maiores ullam
+                        </p>
+                        <span>
+                            Clique aqui e saiba mais
+                        </span>
+                    </div>
+                </a>
+            </div>
+            <div class="classica">
+                <a href="">
+                    <div class="box">
+
+                        <h1>Clássica</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorem, repellendus maiores ullam
+                        </p>
+                        <span>
+                            Clique aqui e saiba mais
+                        </span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+    </div>
     </div>
 
-    <div id="estilos">
-             <div class="box">
-                <h1>Pop</h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime excepturi, atque est nisi ipsam minus.
-                </p>
-            </div>
-            <div class="box">
-                <h1>Rock</h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate 
-                </p>
-            </div>
-            <div class="box">
-                <h1>R&B</h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate 
-                </p>
-            </div>
-            <div class="box">
-                <h1>Hip-Hop</h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate 
-                </p>
-            </div>
-    </div>
 
-    <div id="graficos">
-        <div>
-        <canvas id="grafico"></canvas>
-    </div>
 
-   
-   
+
 </body>
 
 </html>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-<script>
-    const labels = [
-      'Pop',
-      'Rock',
-      'R&B',
-      'Hip-hop',
-      'Eletrônica',
-      'Funk',
-      'Clássica',
-      'Reggaeton'
-    ];
-  
-    const data = {
-      labels: labels,
-      datasets: [{
-        label: 'Gêneros mais ouvidos',
-        backgroundColor: 'rgb(255, 99, 132)',
-        borderColor: 'rgb(255, 99, 132)',
-        data: [0, 10, 5, 2, 20, 30, 45],
-      }]
-    };
-  
-    const config = {
-      type: 'bar',
-      data: data,
-      options: {}
-    };
-  </script>
-  <script>
-    const myChart = new Chart(
-      document.getElementById('grafico'),
-      config
-    );
-  </script>
