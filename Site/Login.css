@@ -12,11 +12,7 @@
     /* background-image: url(imagens/gif\ -\ sem\ m.gif); */
     background-size: 100%;
     background-color: black;
-
-    
-    /* background-color: black; */
-    /* background: rgb(4,3,17);
-    background: linear-gradient(90deg, rgba(4,3,17,1) 0%, rgba(74,41,182,1) 50%, rgba(4,3,17,1) 100%); */
+    background-image: url(https://img.freepik.com/vetores-gratis/vetor-de-fundo-de-tecnologia-digital-com-borda-de-hexagono-em-tom-roxo-escuro_53876-126069.jpg?w=1380&t=st=1667786260~exp=1667786860~hmac=d279e9f4391f39a8dd190f09103f0aa6575650690a445a98cbc547865e964736);
 }
 
 .navbar {
@@ -25,7 +21,6 @@
     height: 10%;
     justify-content: flex-end;
     background-color: rgba(19, 4, 32, 0.5);
-    /* background-color: rgba(19,3,72,1, 0.5);  */
     align-items: center;
     margin-bottom: 2%;
 }
@@ -47,28 +42,69 @@ li a:hover {
 }
 
 #caixa {
-    border: white 2px solid;
+    /* border: white 2px solid; */
     display: flex;
     justify-content: center;
 }
 
 .login {
-    border: red 2px solid;
-    width: 15%;
+    border: purple;
+    width: 20%;
     height: 50vh;
-    background-color: antiquewhite;
+    background-color: rgba(255, 255, 255, 0.654);
+    border-radius: 15px;
+    box-shadow: rgba(2, 251, 43, 0.3) 0px 54px 55px, rgba(5, 36, 240, 0.997) 0px -12px 30px, rgba(17, 11, 199, 0.299) 0px 4px 6px, rgba(18, 185, 57, 0.615) 0px 12px 13px, rgba(9, 203, 99, 0.623) 0px -3px 5px;
+}
+.login h1 {
+    /* border: green 2px solid; */
     display: flex;
-   justify-content: center;
-    flex-direction: column;
+    justify-content:center;
 }
 
-.email {
-    border: black 2px solid;
+.email input{
+    border: 0;
+    border-bottom: rgba(0, 0, 0, 0.784) 2px solid;
+    padding: 10px;
+    outline: 0;
+    margin-left: 10px; 
+    border-radius: 10px;
+    width: 240px;
 }
 
-.senha {
-    border: black 2px solid;
+.senha input {
+    border: 0;
+    border-bottom: rgba(0, 0, 0, 0.784) 2px solid;
+    padding: 10px;
+    outline: 0;
+    margin-left: 10px; 
+    border-radius: 10px;
+    width: 240px;
 }
 
+button {
+    border: 0;
+    border-bottom: rgba(0, 0, 0, 0.784) 2px solid;
+    width: 150px;
+    height: 35px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 70px;
+    font-size: 20px;
+}
+.botao {
+    display: flex;
+    justify-content: center;
+}
+
+.login p {
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.check input{
+    border: red 2px solid;
+
+
+}
 
 
