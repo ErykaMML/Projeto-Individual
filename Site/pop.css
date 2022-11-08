@@ -1,0 +1,32 @@
+
+* {
+    border: 0;
+    margin: 0;
+    font-family: 'Times New Roman', serif;
+}
+.navbar {
+    /* border: red 2px solid; */
+    display: flex;
+    height: 10%;
+    justify-content: flex-end;
+    /* background-color: rgba(19, 4, 32, 0.5); */
+    background-color: rgba(1, 1, 1, 0.8);
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+.navbar li {
+    margin-right: 2%;
+    list-style: none;
+    font-size: 23px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  li a:hover {
+    color: gray;
+    transition: 0.3s;
+  }

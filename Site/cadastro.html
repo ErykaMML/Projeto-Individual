@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="Login.css">
+    <link rel="stylesheet" href="cadastro.css">
 
 </head>
 
@@ -18,9 +18,8 @@
             <!-- <img src="" alt=""> -->
             <li><a href="Home.html"> Home</a></li>
             <li><a style="color: white">|</a></li>
-            <li><a href=""> Login</a></li>
-            <li><a style="color: white">|</a></li>
-            <li><a href="cadastro.html"> Cadastro</a></li>
+            <li><a href="login.html"> Login</a></li>
+
         </div>
         <div class="container">
             <div id="caixa">
@@ -30,8 +29,15 @@
                         <p> E-mail: </p><br><input type="text" id="email" placeholder="exemplo@exemplo.com">
                     </div>
 
+                    <div class="nome">
+                        <p> Nome: </p><br><input type="text" id="nome" placeholder="exemplo@exemplo.com">
+                    </div>
+
                     <div class="senha">
                         <p> Senha: </p><br><input type="password" id="senha" placeholder="*********">
+                    </div>
+                    <div class="senha2">
+                        <p> Confirmar senha: </p><br><input type="password" id="senha2" placeholder="*********">
                     </div>
                     <div class="botao">
                         <button onclick="login()"> Entrar</button>
