@@ -13,11 +13,16 @@ body {
     /* border: red 2px solid; */
     display: flex;
     height: 10%;
-    padding: 30px;
     justify-content: flex-end;
-    background-color: rgba(19, 4, 32, 0.5);
+    /* background-color: rgba(19, 4, 32, 0.5); */
+    background-color: rgba(1, 1, 1, 0.8);
     align-items: center;
     margin-bottom: 2%;
+}
+
+.logo {
+    /* border: red 2px solid; */
+    margin-right: 75%;
 }
 
 .navbar li {
@@ -43,7 +48,7 @@ li a:hover {
     align-items: center;
 }
 
-.login {
+.cadastro {
     border: white 2px solid;
     width: 400px;
     height: 620px;
@@ -53,14 +58,13 @@ li a:hover {
 }
 
 
-.login {
-    border: purple;
+.cadastro {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-top: 20px;
-    background-color: rgba(255, 255, 255, 0.654);
+    background-color: rgba(255, 255, 255, 0.884);
     border-radius: 15px;
     box-shadow: rgba(2, 251, 43, 0.3) 0px 54px 55px,
         rgba(5, 36, 240, 0.997) 0px -12px 30px, rgba(17, 11, 199, 0.299) 0px 4px 6px,
@@ -84,6 +88,7 @@ li a:hover {
     border-radius: 10px;
     width: 240px;
 }
+
 .nome input {
     border: 0;
     border-bottom: rgba(0, 0, 0, 0.784) 2px solid;
@@ -114,9 +119,10 @@ button:hover {
     justify-content: center;
 }
 
-.login p {
+.cadastro p {
     font-size: 25px;
     margin-top: 10px;
+    color: rgb(96, 103, 109);
 }
 
 .senha2 input {

@@ -52,8 +52,6 @@ li a:hover {
     /* border: gray 2px solid; */
     display: flex;
     justify-content: left;
-/* margin-top: 3%;P
-    margin-left: 3%; */
 }
 
 .conceito {
@@ -131,6 +129,11 @@ li a:hover {
     box-shadow: rgba(174, 0, 255, 0.455) 0px 54px 55px, rgba(171, 3, 249, 0.645) 0px -12px 30px, rgba(94, 2, 139, 0.981) 0px 4px 6px, rgb(200, 0, 255) 0px 12px 13px, rgba(167, 4, 255, 0.918) 0px -3px 5px;
     margin-left: 3%;
     color: white;
+}
+
+.box:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
 }
 
 #estilos a {
