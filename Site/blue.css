@@ -5,7 +5,10 @@
   font-family: 'Times New Roman', serif;
 }
 body {
-background-color: black;
+/* background-color: rgba(0, 0, 0, 0.976); */
+background-image: url(https://images.ctfassets.net/3s5io6mnxfqz/1FcEQxYltPqr3yQwm5xDPH/4dc9f2e40d1b05bad20d466958a5f260/AdobeStock_255890026.jpeg);
+background-repeat: no-repeat;
+background-size: 100%;
 }
 .navbar {
   /* border: red 2px solid; */
@@ -15,7 +18,7 @@ background-color: black;
   /* background-color: rgba(19, 4, 32, 0.5); */
   background-color: rgba(1, 1, 1, 0.8);
   align-items: center;
-  margin-bottom: 2%;
+  margin-bottom: 2%; 
 }
 .logo {
 /* border: red 2px solid; */
@@ -45,11 +48,35 @@ li a:hover {
 }
 
 #caixa {
-  border: red 2px solid;
+  /* border: red 2px solid; */
   display: flex;
   justify-content: center;
-  height: 50%;
-  width: 30%;
-  margin-left: 5%;
-  color: white;
+
 }
+
+.funk {
+      /* border: green 2px solid; */
+      height: 50vh;
+      width: 30vw;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.907);
+      padding: 20px;
+      border-radius: 30px;
+      color: white;
+      box-shadow: rgba(182, 46, 240, 0.4) 5px 5px, rgba(172, 46, 240, 0.3) 10px 10px, rgba(233, 46, 240, 0.2) 15px 15px, rgba(191, 46, 240, 0.1) 20px 20px, rgba(188, 46, 240, 0.05) 25px 25px;
+      margin-right: 20%;
+}
+
+.funk h1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3%;
+  font-size: 40px;
+  margin-top: 1%;
+}
+.funk p {
+  /* border: white 2px solid; */
+  font-size: 30px;
+  margin-left: 2%;
+}
+
