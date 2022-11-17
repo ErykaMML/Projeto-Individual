@@ -13,8 +13,8 @@ idgenero INT PRIMARY KEY auto_increment,
 genero VARCHAR (45)
 );
 
-CREATE TABLE votacao (
-idvotacao INT PRIMARY KEY auto_increment,
+CREATE TABLE votos (
+idvotos INT PRIMARY KEY auto_increment,
 fkusuario INT,
 fkgenero INT,
 FOREIGN KEY (fkusuario) REFERENCES usuario (idusuario),
@@ -32,17 +32,19 @@ INSERT INTO genero (genero) VALUES
 ('Pop'),
 ('R&B'),
 ('Funk'),
-('Clássica'),
-('Rock'),
-('Forró'),
-('Sertanejo');
+('Clássica');
 
-INSERT INTO votacao (fkusuario, fkgenero) VALUES
+INSERT INTO votos (fkusuario, fkgenero) VALUES
 (1, 1),
 (2, 3),
-(3,5);
+(3,4);
 
 SELECT * FROM usuario;
 SELECT * FROM genero;
-SELECT * FROM votacao;
-SELECT * FROM votacao;
+SELECT * FROM votos;
+
+SELECT * FROM votos JOIN usuario ON idvotos = fkusuario
+JOIN genero ON idgenero = fkgenero;
+
+SELECT * FROM usuario JOIN votos ON idusuario = fkusuario
+JOIN genero ON idgenero = fkgenero;

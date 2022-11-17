@@ -6,7 +6,7 @@
 }
 body {
   /* background-color: rgba(0, 0, 0, 0.976); */
-  background-image: url(https://tpos.s3.amazonaws.com/events/LSG/22/08/26/001/lsg220826001-1152x648-fr-62ec6944.png);
+  background-image: url(assets/imagens/background\ -\ pop.png);
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -40,6 +40,7 @@ body {
     border: orange 2px solid;
     height: 99.6vh;
     width: auto;
+    margin: bottom 10% ;
   }
   
   li a:hover {
@@ -55,7 +56,7 @@ body {
   }
 
   .pop {
-        /* border: green 2px solid; */
+     /* border: green 2px solid; */
         height: 50vh;
         width: 30vw;
         justify-content: center;
@@ -81,8 +82,8 @@ body {
   }
   
   .instrumento {
-    height: 50vh;
-    width: 30vw;
+    height: 25vh;
+    width: 20vw;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.907);
     padding: 20px;
@@ -102,3 +103,58 @@ body {
     font-size: 30px;
     margin-left: 2%;
   }
+
+  #caixa_camila {
+    border: red 2px solid;
+    height: 80%;
+    background-color: black;
+    color: white;
+  }
+
+  #caixa_camila .foto {
+    border: white 2px solid;
+    width: 30%;
+    height: 500px;
+    background-image: url(https://static-kbo-site.knbcdn.com.br/c_noticias/5/d/e/5dea5732017d9_g.jpg);
+    border-radius: 10%;
+    margin-left: 10%;
+    margin-top: 2%;
+  }
+
+  #caixa_camila h1 {
+    /* border: red 2px solid; */
+    margin-left: 20%;
+
+  }
+  #caixa_camila h1 {
+    /* border: red 2px solid; */
+    align-items: center;
+    margin-top: 1%;
+  }
+
+  .texto {
+    /* border: white 2px solid; */
+    margin-left: 150%;
+    height: 150%;
+    width: 100%;
+    font-size: 35px;
+  }
+
+  #caixa_madison {
+    border: white 2px solid;
+    border-style: double;
+    height: 80%;
+    background-color: black;
+    color: white;
+  }
+
+  #caixa_madison .foto {
+    border: white 2px solid;
+    width: 30%;
+    height: 500px;
+    background-image: url(https://febreteen.com.br/wp-content/uploads/2020/04/Madison-Beer-3.jpg);
+    border-radius: 10%;
+    margin-left: 10%;
+    margin-top: 1%;
+  }
+
