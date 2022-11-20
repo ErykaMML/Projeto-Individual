@@ -1,0 +1,140 @@
+
+* {
+  border: 0;
+  margin: 0;
+  font-family: 'Times New Roman', serif;
+}
+body {
+/* background-color: rgba(0, 0, 0, 0.976); */
+background-image: url(imagens/violino.png);
+background-repeat: no-repeat;
+background-size: 99%;
+}
+.navbar {
+  /* border: red 2px solid; */
+  display: flex;
+  height: 10%;
+  justify-content: flex-end;
+  /* background-color: rgba(19, 4, 32, 0.5); */
+  background-color: rgba(1, 1, 1, 0.8);
+  align-items: center;
+  margin-bottom: 2%; 
+}
+.logo {
+/* border: red 2px solid; */
+margin-right: 70%;
+}
+
+.navbar li {
+  margin-right: 2%;
+  list-style: none;
+  font-size: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+#pai {
+  border: orange 2px solid;
+  height: 99.6vh;
+  width: auto;
+}
+
+li a:hover {
+  color: gray;
+  transition: 0.3s;
+}
+
+#caixa {
+  /* border: red 2px solid; */
+  display: flex;
+  justify-content: center;
+
+}
+.classica {
+  /* border: green 2px solid; */
+     height: 50%;
+     width: 40%;
+     justify-content: center;
+     background-color: rgba(0, 0, 0, 0.743);
+     padding: 20px;
+     border-radius: 30px;
+     color: white;
+     box-shadow: rgba(182, 46, 240, 0.4) 5px 5px, rgba(172, 46, 240, 0.3) 10px 10px, rgba(233, 46, 240, 0.2) 15px 15px, rgba(191, 46, 240, 0.1) 20px 20px, rgba(188, 46, 240, 0.05) 25px 25px;
+     margin-right: 20%;
+}
+
+.classica h1 {
+ display: flex;
+ justify-content: center;
+ margin-bottom: 3%;
+ font-size: 40px;
+ margin-top: 1%;
+}
+.classica p {
+ /* border: white 2px solid; */
+ font-size: 30px;
+ margin-left: 2%;
+}
+
+.instrumento {
+ height: 25vh;
+ width: 20vw;
+ justify-content: center;
+ background-color:rgba(0, 0, 0, 0.743);
+ padding: 20px;
+ border-radius: 30px;
+ color: white;
+ box-shadow: rgba(182, 46, 240, 0.4) 5px 5px, rgba(172, 46, 240, 0.3) 10px 10px, rgba(233, 46, 240, 0.2) 15px 15px, rgba(191, 46, 240, 0.1) 20px 20px, rgba(188, 46, 240, 0.05) 25px 25px;
+}
+.instrumento h1 {
+ display: flex;
+ justify-content: center;
+ margin-bottom: 3%;
+ font-size: 40px;
+ margin-top: 1%;
+}
+.instrumento p {
+ /* border: white 2px solid; */
+ font-size: 30px;
+ margin-left: 2%;
+}
+
+#beethoven {
+ border: red 2px solid;
+ height: 80%;
+ background-color: black;
+ color: white;
+}
+
+#beethoven .foto {
+ /* border: white 2px solid; */
+ width: 30%;
+ height: 500px;
+ background-image: url(https://www.coladaweb.com/wp-content/uploads/2019/07/20190708-beethoven.jpg);
+ background-repeat: no-repeat;
+ background-size: 100%;
+ border-radius: 10%;
+ margin-left: 10%;
+ margin-top: 2%;
+}
+
+#beethoven h1 {
+ /* border: red 2px solid; */
+ margin-left: 20%;
+
+}
+#beethoven h1 {
+ /* border: red 2px solid; */
+ align-items: center;
+ margin-top: 1%;
+}
+
+.texto {
+ /* border: white 2px solid; */
+ margin-left: 150%;
+ width: 130%;
+ font-size: 28px;
+}

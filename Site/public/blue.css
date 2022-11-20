@@ -1,0 +1,176 @@
+
+* {
+  border: 0;
+  margin: 0;
+  font-family: 'Times New Roman', serif;
+}
+body {
+/* background-color: rgba(0, 0, 0, 0.976); */
+background-image: url(https://images.ctfassets.net/3s5io6mnxfqz/1FcEQxYltPqr3yQwm5xDPH/4dc9f2e40d1b05bad20d466958a5f260/AdobeStock_255890026.jpeg);
+background-repeat: no-repeat;
+background-size: 100%;
+}
+.navbar {
+  /* border: red 2px solid; */
+  display: flex;
+  height: 10%;
+  justify-content: flex-end;
+  /* background-color: rgba(19, 4, 32, 0.5); */
+  background-color: rgba(1, 1, 1, 0.8);
+  align-items: center;
+  margin-bottom: 2%; 
+}
+.logo {
+/* border: red 2px solid; */
+margin-right: 70%;
+}
+
+.navbar li {
+  margin-right: 2%;
+  list-style: none;
+  font-size: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+#pai {
+  /* border: orange 2px solid; */
+  height: 99.6vh;
+  width: auto;
+}
+
+li a:hover {
+  color: gray;
+  transition: 0.3s;
+}
+
+#caixa {
+  /* border: red 2px solid; */
+  display: flex;
+  justify-content: center;
+
+}
+
+.funk {
+      /* border: green 2px solid; */
+      height: 50vh;
+      width: 30vw;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.907);
+      padding: 20px;
+      border-radius: 30px;
+      color: white;
+      box-shadow: rgba(182, 46, 240, 0.4) 5px 5px, rgba(172, 46, 240, 0.3) 10px 10px, rgba(233, 46, 240, 0.2) 15px 15px, rgba(191, 46, 240, 0.1) 20px 20px, rgba(188, 46, 240, 0.05) 25px 25px;
+      margin-right: 20%;
+}
+
+.blue h1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3%;
+  font-size: 40px;
+  margin-top: 1%;
+}
+
+.blue p {
+  /* border: white 2px solid; */
+  font-size: 30px;
+  margin-left: 2%;
+}
+
+#caixa {
+  display: flex;
+  justify-content: center;
+}
+
+.blue {
+  height: 50%;
+  width:2000%;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.907);
+  padding: 20px;
+  border-radius: 30px;
+  color: white;
+  box-shadow: rgba(182, 46, 240, 0.4) 5px 5px, rgba(172, 46, 240, 0.3) 10px 10px, rgba(233, 46, 240, 0.2) 15px 15px, rgba(191, 46, 240, 0.1) 20px 20px, rgba(188, 46, 240, 0.05) 25px 25px;
+  margin-left: 40%;
+  margin-right: 5%;
+}
+
+.blue h1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3%;
+  font-size: 40px;
+  margin-top: 1%;
+}
+.blue p {
+  /* border: white 2px solid; */
+  font-size: 30px;
+  margin-left: 2%;
+}
+.instrumentos {
+  /* border: red 2px solid; */
+  height: 20%;
+  width: 1000px;
+  justify-content: center;
+  background-color:rgba(0, 0, 0, 0.942);
+  padding: 20px;
+  border-radius: 30px;
+  color: white;
+  box-shadow: rgba(182, 46, 240, 0.4) 5px 5px, rgba(172, 46, 240, 0.3) 10px 10px, rgba(233, 46, 240, 0.2) 15px 15px, rgba(191, 46, 240, 0.1) 20px 20px, rgba(188, 46, 240, 0.05) 25px 25px;
+  margin-left: 5%;
+}
+
+.instrumentos h1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3%;
+  font-size: 40px;
+  margin-top: 1%;
+}
+
+.instrumentos p {
+  /* border: white 2px solid; */
+  font-size: 30px;
+  margin-left: 2%;
+}
+
+#kehlani {
+  /* border: red 2px solid; */
+  height: 80%;
+  background-color: black;
+  color: white;
+}
+
+#kehlani .foto {
+  /* border: white 2px solid; */
+  width: 30%;
+  height: 400px;
+  background-image: url(imagens/kehlani.png);
+  background-repeat: no-repeat;
+  border-radius: 10%;
+  margin-left: 10%;
+  margin-top: 2%;
+  
+}
+
+#kehlani h1 {
+  /* border: red 2px solid; */
+  margin-left: 20%;
+
+}
+#kehlani h1 {
+  /* border: red 2px solid; */
+  align-items: center;
+  margin-top: 1%;
+}
+
+.texto {
+  /* border: white 2px solid; */
+  margin-left: 150%;
+  width: 130%;
+  font-size: 28px;
+}

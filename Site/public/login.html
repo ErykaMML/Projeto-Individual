@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Login.css">
+
+</head>
+
+
+<body>
+    <!-- home -->
+    <div id="pai">
+        <div class="navbar">
+            <div class="logo">
+                <img src="imagens/Logo - logo.png" height="80px">
+            </div>
+            <li><a href="index.html"> Home</a></li>
+            <li><a style="color: white">|</a></li>
+            <li><a href="cadastro.html">Cadastre-se</a></li>
+        </div>
+        <div class="container">
+            <div id="caixa">
+                <div class="login">
+                    <h1 class="img"><img src="imagens/Logo - logo.png" height="120px"></h1>
+                    <div class="email">
+                        <p> E-mail: </p><br><input type="text" id="email" placeholder="exemplo@exemplo.com">
+                    </div>
+
+                    <div class="senha">
+                        <p> Senha: </p><br><input type="password" id="senha" placeholder="*********">
+                    </div>
+                    <div class="cadastro">
+                    <span>Não tem login?<a href="cadastro.html"> Cadastre-se</a></span>
+                    </div>
+                    <div class="botao">
+                        <button onclick="entrar()"> Entrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    function entrar() {
+
+        var emailVar = email.value;
+        var senhaVar = senha.value;
+
+        if (emailVar == "" || senhaVar == "") {
+            alert(`E-mail ou senha incorreto`)
+        }
+        else {
+        console.log("FORM LOGIN: ", emailVar);
+        console.log("FORM SENHA: ", senhaVar);
+
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                emailServer: emailVar,
+                senhaServer: senhaVar
+            })
+        }).then(function (resposta) {
+            console.log("ESTOU NO THEN DO entrar()!")
+
+            if (resposta.ok) {
+                console.log(resposta);
+                alert(`Login realizado com sucesso`)
+
+                resposta.json().then(json => {
+                    console.log(json);
+                    console.log(JSON.stringify(json));
+
+                    sessionStorage.EMAIL_USUARIO = json.email;
+                    sessionStorage.NOME_USUARIO = json.nome;
+                    sessionStorage.ID_USUARIO = json.id;
+                });
+
+            } else {
+
+                console.log("Houve um erro ao tentar realizar o login!");
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+                });
+            }
+
+        }).catch(function (erro) {
+            console.log(erro);
+        })
+
+        return false;
+    }
+}
+</script>

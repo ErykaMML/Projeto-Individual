@@ -1,0 +1,140 @@
+
+* {
+    border: 0;
+    margin: 0;
+    font-family: 'Times New Roman', serif;
+}
+body {
+  /* background-color: rgba(0, 0, 0, 0.976); */
+  background-image: url(https://wallpaperaccess.com/full/1569677.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.navbar {
+    /* border: red 2px solid; */
+    display: flex;
+    height: 10%;
+    justify-content: flex-end;
+    /* background-color: rgba(19, 4, 32, 0.5); */
+    background-color: rgba(1, 1, 1, 0.8);
+    align-items: center;
+    margin-bottom: 2%;
+}
+.logo {
+  /* border: red 2px solid; */
+  margin-right: 70%;
+}
+
+.navbar li {
+    margin-right: 2%;
+    list-style: none;
+    font-size: 20px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: white;
+  }
+
+  #pai {
+    /* border: orange 2px solid; */
+    height: 99.6vh;
+    width: auto;
+    margin: bottom 10% ;
+  }
+  
+  li a:hover {
+    color: gray;
+    transition: 0.3s;
+  }
+
+  #caixa {
+    /* border: red 2px solid; */
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .pop {
+     /* border: green 2px solid; */
+        height: 50vh;
+        width: 30vw;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.942);
+        padding: 20px;
+        border-radius: 30px;
+        color: white;
+        box-shadow: rgba(182, 46, 240, 0.4) 5px 5px, rgba(172, 46, 240, 0.3) 10px 10px, rgba(233, 46, 240, 0.2) 15px 15px, rgba(191, 46, 240, 0.1) 20px 20px, rgba(188, 46, 240, 0.05) 25px 25px;
+        margin-right: 20%;
+  }
+
+  .pop h1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
+    font-size: 40px;
+    margin-top: 1%;
+  }
+  .pop p {
+    /* border: white 2px solid; */
+    font-size: 30px;
+    margin-left: 2%;
+  }
+  
+  .instrumento {
+    height: 25vh;
+    width: 20vw;
+    justify-content: center;
+    background-color:rgba(0, 0, 0, 0.942);
+    padding: 20px;
+    border-radius: 30px;
+    color: white;
+    box-shadow: rgba(182, 46, 240, 0.4) 5px 5px, rgba(172, 46, 240, 0.3) 10px 10px, rgba(233, 46, 240, 0.2) 15px 15px, rgba(191, 46, 240, 0.1) 20px 20px, rgba(188, 46, 240, 0.05) 25px 25px;
+  }
+  .instrumento h1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
+    font-size: 40px;
+    margin-top: 1%;
+  }
+  .instrumento p {
+    /* border: white 2px solid; */
+    font-size: 30px;
+    margin-left: 2%;
+  }
+
+  #caixa_camila {
+    /* border: red 2px solid; */
+    height: 80%;
+    background-color: black;
+    color: white;
+  }
+
+  #caixa_camila .foto {
+    /* border: white 2px solid; */
+    width: 30%;
+    height: 500px;
+    background-image: url(https://static-kbo-site.knbcdn.com.br/c_noticias/5/d/e/5dea5732017d9_g.jpg);
+    border-radius: 10%;
+    margin-left: 10%;
+    margin-top: 2%;
+  }
+
+  #caixa_camila h1 {
+    /* border: red 2px solid; */
+    margin-left: 20%;
+
+  }
+  #caixa_camila h1 {
+    /* border: red 2px solid; */
+    align-items: center;
+    margin-top: 1%;
+  }
+
+  .texto {
+    /* border: white 2px solid; */
+    margin-left: 150%;
+    width: 100%;
+    font-size: 35px;
+  }
