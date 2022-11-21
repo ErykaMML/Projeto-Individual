@@ -2,14 +2,14 @@
     border: 0;
     margin: 0;
     font-family: "Times New Roman", serif;
-}
-
-body {
+  }
+  
+  body {
     background-color: black;
     color: white;
-}
-
-.navbar {
+  }
+  
+  .navbar {
     /* border: red 2px solid; */
     display: flex;
     height: 10%;
@@ -18,47 +18,48 @@ body {
     background-color: rgba(1, 1, 1, 0.8);
     align-items: center;
     margin-bottom: 2%;
-}
-
-.logo {
+  }
+  
+  .logo {
     /* border: red 2px solid; */
     margin-right: 75%;
-}
-
-.navbar li {
+  }
+  
+  .navbar li {
     margin-right: 2%;
     list-style: none;
     font-size: 23px;
-}
-
-.navbar a {
+  }
+  
+  .navbar a {
     text-decoration: none;
     color: white;
-}
-
-li a:hover {
+  }
+  
+  li a:hover {
     color: gray;
     transition: 0.3s;
-}
-
-.container {
+  }
+  
+  .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.cadastro {
+  }
+  
+  .login {
     border: white 2px solid;
     width: 400px;
-    height: 620px;
+    height: 440px;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-
-.cadastro {
+  }
+  
+  
+  .login {
+    border: purple;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,69 +68,55 @@ li a:hover {
     background-color: rgba(255, 255, 255, 0.884);
     border-radius: 15px;
     box-shadow: rgba(2, 251, 43, 0.3) 0px 54px 55px,
-        rgba(5, 36, 240, 0.997) 0px -12px 30px, rgba(17, 11, 199, 0.299) 0px 4px 6px,
-        rgba(18, 185, 57, 0.615) 0px 12px 13px, rgba(9, 203, 99, 0.623) 0px -3px 5px;
-}
-
-.email input {
+      rgba(5, 36, 240, 0.997) 0px -12px 30px, rgba(17, 11, 199, 0.299) 0px 4px 6px,
+      rgba(18, 185, 57, 0.615) 0px 12px 13px, rgba(9, 203, 99, 0.623) 0px -3px 5px;
+  }
+  
+  .nome input {
     border: 0;
     border-bottom: rgba(0, 0, 0, 0.784) 2px solid;
     padding: 10px;
     outline: 0;
     border-radius: 10px;
     width: 240px;
-}
-
-.senha input {
+  }
+  
+  .voto select {
+    margin-top: 3%;
     border: 0;
     border-bottom: rgba(0, 0, 0, 0.784) 2px solid;
     padding: 10px;
     outline: 0;
     border-radius: 10px;
-    width: 240px;
-}
-
-.nome input {
-    border: 0;
-    border-bottom: rgba(0, 0, 0, 0.784) 2px solid;
-    padding: 10px;
-    outline: 0;
-    border-radius: 10px;
-    width: 240px;
-}
-
-button {
+    width: 260px;
+  }
+  
+  button {
     border: 0;
     border-bottom: rgba(0, 0, 0, 0.784) 2px solid;
     width: 150px;
     height: 35px;
     border-radius: 10px;
     cursor: pointer;
-    margin-top: 40px;
+    margin-top: 10%;
     font-size: 20px;
-}
-
-button:hover {
+  }
+  
+  button:hover {
     background-color: gray;
     transition: 0.3s;
-}
-
-.botao {
+  }
+  
+  .botao {
     display: flex;
     justify-content: center;
-}
-
-.cadastro p {
+  }
+  
+  .login p {
     font-size: 25px;
     margin-top: 10px;
     color: rgb(96, 103, 109);
-}
+  }
+  
 
-.senha2 input {
-    border: 0;
-    border-bottom: rgba(0, 0, 0, 0.784) 2px solid;
-    padding: 10px;
-    outline: 0;
-    border-radius: 10px;
-    width: 240px;
-}
+  

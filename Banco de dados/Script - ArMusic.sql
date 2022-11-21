@@ -1,3 +1,4 @@
+DROP DATABASE if exists ArMusic;
 CREATE DATABASE ArMusic;
 USE ArMusic;
 
@@ -32,6 +33,10 @@ INSERT INTO genero (genero) VALUES
 ('Pop'),
 ('R&B'),
 ('Funk'),
+('Rock'),
+('Sertanejo'),
+('Rap'),
+('Forró'),
 ('Clássica');
 
 INSERT INTO votos (fkusuario, fkgenero) VALUES
@@ -42,9 +47,6 @@ INSERT INTO votos (fkusuario, fkgenero) VALUES
 SELECT * FROM usuario;
 SELECT * FROM genero;
 SELECT * FROM votos;
-
-SELECT * FROM votos JOIN usuario ON idvotos = fkusuario
-JOIN genero ON idgenero = fkgenero;
 
 SELECT * FROM usuario JOIN votos ON idusuario = fkusuario
 JOIN genero ON idgenero = fkgenero;
