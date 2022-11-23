@@ -29,12 +29,13 @@
             <div id="caixa">
                 <div class="login">
                     <h1 class="img"><img src="imagens/Logo - logo.png" height="120px"></h1>
+                    <!-- <h1 class="faça">Faça seu login!</h1> -->
                     <div class="email">
-                        <p> E-mail: </p><br><input type="text" id="email" placeholder="exemplo@exemplo.com">
+                        <p> E-mail: </p><br><input type="text" id="email" onkeyup="borda()" placeholder="exemplo@exemplo.com">
                     </div>
 
                     <div class="senha">
-                        <p> Senha: </p><br><input type="password" id="senha" placeholder="*********">
+                        <p> Senha: </p><br><input type="password" id="senha"  onkeyup="borda()"placeholder="*********">
                     </div>
                     <div class="cadastro">
                     <span>Não tem login?<a href="cadastro.html"> Cadastre-se</a></span>
@@ -57,11 +58,14 @@
 
         if (emailVar == "" || senhaVar == "") {
             alert(`E-mail ou senha incorreto`)
-            email.style.border = `red 2px solid;` 
+            email.style.border = `red 2px solid`;
+            senha.style.border = `red 2px solid`;
+
         }
         else {
         console.log("FORM LOGIN: ", emailVar);
         console.log("FORM SENHA: ", senhaVar);
+
 
         fetch("/usuarios/autenticar", {
             method: "POST",
@@ -105,5 +109,10 @@
 
         return false;
     }
+}
+
+function borda() {
+    email.style.border = `none`
+    senha.style.border = `none`
 }
 </script>
