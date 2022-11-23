@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="cadastro.css">
 
 </head>
-
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+</style>
 
 <body>
     <!-- home -->
@@ -61,7 +63,7 @@
         var confirmacaoSenhaVar = senha2.value;
 
         if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "") {
-            return false;
+            alert(`Insira todos os campos corretamente`)
         }
         else {
 

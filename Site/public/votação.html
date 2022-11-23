@@ -11,7 +11,8 @@
 </head>
 
 
-<body>
+<body onload="verificar()">
+    
     <!-- home -->
     <div id="pai">
         <div class="navbar">
@@ -30,6 +31,7 @@
 
                     <div class="voto">
                         <select name="" id="votos">
+                            <option value="0">Selecione uma opção</option>
                             <option value="1">Pop</option>
                             <option value="2">R&B</option>
                             <option value="3">Funk</option>
@@ -41,7 +43,10 @@
                         </select>    
                     </div>
                     <div class="botao">
-                        <button onclick="entrar()"> Votar!  </button>
+                        <button onclick="entrar()" id="block"> Votar!  </button>
+                    </div>
+                    <div class="erro">
+                        <span style="display:none;" id="votou">Você já votou!!</span>
                     </div>
                 </div>
             </div>
@@ -49,3 +54,60 @@
     </div>
 </body>
 </html>
+<script>
+    var idusuario = sessionStorage.ID_USUARIO
+    function verificar() {
+        console.log(idusuario)
+        fetch(`/usuarios/verificar/${idusuario}`, { cache: 'no-store' }).then(function (response) {
+            if (response.ok) {
+                response.json().then(function (resposta) {
+                    console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
+                    if (resposta.length != 0) {
+                        votou.style.display = "block"
+                        block.disabled = true
+                        votos.value = 0
+                        votos.disabled = true
+                        nome.disabled = true
+                    }
+                });
+            } else {
+                console.error('Nenhum dado encontrado ou erro na API');
+            }
+        })
+            .catch(function (error) {
+                console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
+            });
+    }
+
+    function entrar() {
+        var idgenero = votos.value
+        fetch("/usuarios/votar", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                // crie um atributo que recebe o valor recuperado aqui
+                // Agora vá para o arquivo routes/usuario.js
+                idusuarioServer: idusuario,
+                idgeneroServer: idgenero
+            })
+        }).then(function (resposta) {
+
+            console.log("resposta: ", resposta);
+
+            if (resposta.ok) {
+                nome.value = ``
+                verificar()
+                console.log(`registrados`)
+                block.disabled = true
+            } else {
+                throw ("Houve um erro ao tentar realizar o cadastro!");
+            }
+        }).catch(function (resposta) {
+            console.log(`#ERRO: ${resposta}`);
+        });
+
+        return false;
+    }
+</script>

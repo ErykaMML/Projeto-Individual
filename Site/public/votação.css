@@ -79,6 +79,7 @@
     outline: 0;
     border-radius: 10px;
     width: 240px;
+    font-size: 20px;
   }
   
   .voto select {
@@ -118,5 +119,13 @@
     color: rgb(96, 103, 109);
   }
   
+  select {
+    font-size: 20px;
+  }
+  .erro span {
+    margin-top: 4%;
+    font-size: 20px;
+    color: red;
+  }
 
   

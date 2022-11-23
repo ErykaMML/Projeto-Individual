@@ -1,7 +1,7 @@
 * {
   border: 0;
   margin: 0;
-  font-family: "Times New Roman", serif;
+  font-family: 'Playfair Display', serif;
 }
 
 body {
@@ -28,7 +28,7 @@ body {
 .navbar li {
   margin-right: 2%;
   list-style: none;
-  font-size: 23px;
+  font-size: 20px;
 }
 
 .navbar a {
@@ -79,6 +79,7 @@ li a:hover {
   outline: 0;
   border-radius: 10px;
   width: 240px;
+  font-size: 20px;
 }
 
 .senha input {
@@ -88,6 +89,7 @@ li a:hover {
   outline: 0;
   border-radius: 10px;
   width: 240px;
+  font-size: 15px;
 }
 
 button {
@@ -127,7 +129,8 @@ button:hover {
   width: 150%;
   height: 80%;
   margin-left: 30%;
-  color: rgb(96, 103, 109);
+  color: rgb(60, 64, 67);
+  font-size: 17px;
 }
 
 .cadastro span a{
@@ -135,5 +138,6 @@ button:hover {
   text-decoration: none;
   color: rgb(0, 0, 0);
   font-weight: bold;
+  font-size: 17px;
 }
 

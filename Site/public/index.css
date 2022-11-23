@@ -1,7 +1,7 @@
 * {
     border: 0;
     margin: 0;
-    font-family: 'Times New Roman', serif;
+    font-family: 'Playfair Display', serif;
 }
 /* body{
     background-image: url(imagens/background\ -\ roxo.jpg);
@@ -37,7 +37,7 @@
 .navbar li {
     margin-right: 2%;
     list-style: none;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .navbar a {
@@ -59,15 +59,15 @@ li a:hover {
 
 .conceito {
     /* border: green 2px solid; */
-    height: 30vh;
-    width: 40vw;
+    height: 30%;
+    width: 40%;
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.76);
     padding: 20px;
     border-radius: 30px;
     box-shadow: rgba(174, 0, 255, 0.455) 0px 54px 55px, rgba(171, 3, 249, 0.645) 0px -12px 30px, rgba(94, 2, 139, 0.981) 0px 4px 6px, rgb(200, 0, 255) 0px 12px 13px, rgba(167, 4, 255, 0.918) 0px -3px 5px;
-    margin-left: 3%;
+    margin-left: 5%;
     color: white;
 }
 
@@ -84,13 +84,13 @@ li a:hover {
     justify-content: center;
     align-items: center;
     margin: 5%;
-    font-size: 35px;
+    font-size: 30px;
 }
 
 .musica {
     /* border: orange 2px solid; */
-    height: 55vh;
-    width: 40vw;
+    height: 60%;
+    width: 70%;
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.76); 
@@ -98,6 +98,7 @@ li a:hover {
     box-shadow: rgba(174, 0, 255, 0.455) 0px 54px 55px, rgba(171, 3, 249, 0.645) 0px -12px 30px, rgba(94, 2, 139, 0.981) 0px 4px 6px, rgb(200, 0, 255) 0px 12px 13px, rgba(167, 4, 255, 0.918) 0px -3px 5px;
     margin-left: 12%;
     color: white;
+    margin-right: 5%;
 }
 
 .musica h1{
@@ -111,8 +112,7 @@ li a:hover {
     justify-content: center;
     align-items: center;
     margin: 5%;
-    font-size: 35px;
-}
+    font-size: 30px;}
 
 
 #estilos {
@@ -124,14 +124,20 @@ li a:hover {
 }
 
 .box {
-    width: 100%;
-    height: 90px;
+    width: 12vw;
+    height: 10vh;
     background-color: rgba(0, 0, 0, 0.76);
     padding: 20px;
     border-radius: 30px;
     box-shadow: rgba(174, 0, 255, 0.455) 0px 54px 55px, rgba(171, 3, 249, 0.645) 0px -12px 30px, rgba(94, 2, 139, 0.981) 0px 4px 6px, rgb(200, 0, 255) 0px 12px 13px, rgba(167, 4, 255, 0.918) 0px -3px 5px;
     margin-left: 3%;
     color: white;
+}
+
+.box span {
+    /* border: black 2px solid; */
+    font-size: 15px;
+    margin-top: 8%;
 }
 
 .box:hover {
@@ -222,7 +228,7 @@ span{
     background-image: url(imagens/roxo\ -\ cortado.PNG);
     background-repeat: no-repeat;
     background-size: 100%;
-    height: 100%;
+    /* height: 100%; */
 }
 
 .texto {

@@ -1,7 +1,7 @@
 * {
     border: 0;
     margin: 0;
-    font-family: "Times New Roman", serif;
+    font-family: 'Playfair Display', serif;
 }
 
 body {
@@ -50,8 +50,8 @@ li a:hover {
 
 .cadastro {
     border: white 2px solid;
-    width: 400px;
-    height: 620px;
+    width: 145%;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -78,6 +78,7 @@ li a:hover {
     outline: 0;
     border-radius: 10px;
     width: 240px;
+    font-size: 20px;
 }
 
 .senha input {
@@ -87,6 +88,7 @@ li a:hover {
     outline: 0;
     border-radius: 10px;
     width: 240px;
+    font-size: 15px;
 }
 
 .nome input {
@@ -96,6 +98,7 @@ li a:hover {
     outline: 0;
     border-radius: 10px;
     width: 240px;
+    font-size: 20px;
 }
 
 button {
@@ -105,7 +108,7 @@ button {
     height: 35px;
     border-radius: 10px;
     cursor: pointer;
-    margin-top: 40px;
+    margin-top: 15px;
     font-size: 20px;
 }
 
@@ -132,4 +135,5 @@ button:hover {
     outline: 0;
     border-radius: 10px;
     width: 240px;
+    font-size: 15px;
 }

@@ -24,6 +24,24 @@ function listar(req, res) {
         );
 }
 
+function verificar(req, res) {
+
+
+    var idusuario = req.params.idusuario;
+    console.log(`idusuario no controller ${idusuario}`)
+    usuarioModel.verificar(idusuario).then(function (resultado) {
+        if (resultado.length >= 0) {
+            res.status(200).json(resultado);
+        } else {
+            res.status(204).send("Nenhum resultado encontrado!")
+        }
+    }).catch(function (erro) {
+        console.log(erro);
+        console.log("Houve um erro ao buscar as ultimas medidas.", erro.sqlMessage);
+        res.status(500).json(erro.sqlMessage);
+    });
+}
+
 function entrar(req, res) {
     var email = req.body.emailServer;
     var senha = req.body.senhaServer;
@@ -59,6 +77,29 @@ function entrar(req, res) {
     }
 
 }
+
+function votar(req, res) {
+    // Crie uma variável que vá recuperar os valores do arquivo cadastro.html
+    var idusuario = req.body.idusuarioServer;
+    var idgenero = req.body.idgeneroServer;
+
+        // Passe os valores como parâmetro e vá para o arquivo usuarioModel.js
+        usuarioModel.votar(idusuario, idgenero)
+            .then(
+                function (resultado) {
+                    res.json(resultado);
+                }
+            ).catch(
+                function (erro) {
+                    console.log(erro);
+                    console.log(
+                        "\nHouve um erro ao realizar o cadastro! Erro: ",
+                        erro.sqlMessage
+                    );
+                    res.status(500).json(erro.sqlMessage);
+                }
+            );
+    }
 
 function cadastrar(req, res) {
     // Crie uma variável que vá recuperar os valores do arquivo cadastro.html
@@ -98,5 +139,7 @@ module.exports = {
     entrar,
     cadastrar,
     listar,
-    testar
+    testar,
+    verificar,
+    votar,
 }

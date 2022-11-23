@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="Login.css">
 
 </head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+</style>
 
 
 <body>
@@ -54,6 +57,7 @@
 
         if (emailVar == "" || senhaVar == "") {
             alert(`E-mail ou senha incorreto`)
+            email.style.border = `red 2px solid;` 
         }
         else {
         console.log("FORM LOGIN: ", emailVar);
@@ -81,7 +85,9 @@
 
                     sessionStorage.EMAIL_USUARIO = json.email;
                     sessionStorage.NOME_USUARIO = json.nome;
-                    sessionStorage.ID_USUARIO = json.id;
+                    sessionStorage.ID_USUARIO = json.idusuario;
+
+                    setTimeout(() => window.location = "votação.html", 2000);
                 });
 
             } else {
