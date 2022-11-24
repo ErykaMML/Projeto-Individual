@@ -4,12 +4,11 @@
     margin: 0;
     font-family: 'Playfair Display', serif;
 }
-body {
-  /* background-color: rgba(0, 0, 0, 0.976); */
-  background-image: url(https://wallpaperaccess.com/full/1569677.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
+/* body {
+  background-color: rgba(0, 0, 0, 0.976);
+   background-image: url(https://wallpaperaccess.com/full/1569677.jpg);
+
+} */
 .navbar {
     /* border: red 2px solid; */
     display: flex;
@@ -28,7 +27,7 @@ body {
 .navbar li {
     margin-right: 2%;
     list-style: none;
-    font-size: 20px;
+    font-size: 18px;
   }
   
   .navbar a {
@@ -40,7 +39,9 @@ body {
     /* border: orange 2px solid; */
     height: 99.6vh;
     width: auto;
-    margin: bottom 10% ;
+    background-image: linear-gradient(1deg, #000000 30%, transparent 150%), url(imagens/pop\ -\ image.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
   
   li a:hover {
@@ -57,8 +58,8 @@ body {
 
   .pop {
      /* border: green 2px solid; */
-        height: 50vh;
-        width: 30vw;
+        height: 50%;
+        width: 40%;
         justify-content: center;
         background-color: rgba(0, 0, 0, 0.942);
         padding: 20px;
@@ -82,14 +83,15 @@ body {
   }
   
   .instrumento {
-    height: 25vh;
-    width: 20vw;
+    height: 25%;
+    width: 30%;
     justify-content: center;
     background-color:rgba(0, 0, 0, 0.942);
     padding: 20px;
     border-radius: 30px;
     color: white;
     box-shadow: rgba(182, 46, 240, 0.4) 5px 5px, rgba(172, 46, 240, 0.3) 10px 10px, rgba(233, 46, 240, 0.2) 15px 15px, rgba(191, 46, 240, 0.1) 20px 20px, rgba(188, 46, 240, 0.05) 25px 25px;
+  margin-right: 1%;
   }
   .instrumento h1 {
     display: flex;
@@ -106,9 +108,10 @@ body {
 
   #caixa_camila {
     /* border: red 2px solid; */
-    height: 80%;
+    height: 70vh;
     background-color: black;
     color: white;
+    /* margin-top: 15%; */
   }
 
   #caixa_camila .foto {
@@ -118,19 +121,17 @@ body {
     background-image: url(https://static-kbo-site.knbcdn.com.br/c_noticias/5/d/e/5dea5732017d9_g.jpg);
     border-radius: 10%;
     margin-left: 10%;
-    margin-top: 2%;
+    margin-top: 5%;
+    box-shadow: rgba(247, 247, 247, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px;
   }
 
   #caixa_camila h1 {
     /* border: red 2px solid; */
     margin-left: 20%;
-
-  }
-  #caixa_camila h1 {
-    /* border: red 2px solid; */
     align-items: center;
-    margin-top: 1%;
+    margin-top: 15%;
   }
+
 
   .texto {
     /* border: white 2px solid; */

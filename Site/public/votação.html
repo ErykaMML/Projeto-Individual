@@ -48,6 +48,9 @@
                     <div class="erro">
                         <span style="display:none;" id="votou">Você já votou!!</span>
                     </div>
+                    <div class="voltarp">
+                        <span style="display:none;" id="voltar">Voltar para o <a href="index.html"> <b>site</b></a></span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -68,6 +71,7 @@
                         votos.value = 0
                         votos.disabled = true
                         nome.disabled = true
+                        voltar.style.display = "block"
                     }
                 });
             } else {

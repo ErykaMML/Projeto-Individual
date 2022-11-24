@@ -51,7 +51,7 @@ li a:hover {
 .login {
   border: white 2px solid;
   width: 400px;
-  height: 440px;
+  height: 520px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -141,3 +141,13 @@ button:hover {
   font-size: 17px;
 }
 
+.erro span {
+  margin-top: 4%;
+  font-size: 20px;
+  color: red;
+}
+
+.faca {
+  color: rgb(96, 103, 109);
+  margin-bottom: 2%;
+}

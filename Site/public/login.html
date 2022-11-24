@@ -29,7 +29,12 @@
             <div id="caixa">
                 <div class="login">
                     <h1 class="img"><img src="imagens/Logo - logo.png" height="120px"></h1>
-                    <!-- <h1 class="faça">Faça seu login!</h1> -->
+                    <h1 class="faca">Faça seu login!
+
+                    </h1>
+                    <div class="erro">
+                        <span style="display:none;" id="errado">E-mail ou senha incorreto</span>
+                    </div>
                     <div class="email">
                         <p> E-mail: </p><br><input type="text" id="email" onkeyup="borda()" placeholder="exemplo@exemplo.com">
                     </div>
@@ -40,6 +45,7 @@
                     <div class="cadastro">
                     <span>Não tem login?<a href="cadastro.html"> Cadastre-se</a></span>
                     </div>
+                  
                     <div class="botao">
                         <button onclick="entrar()"> Entrar</button>
                     </div>
@@ -55,7 +61,9 @@
 
         var emailVar = email.value;
         var senhaVar = senha.value;
-
+        email.value = ``
+        senha.value = ``
+        
         if (emailVar == "" || senhaVar == "") {
             alert(`E-mail ou senha incorreto`)
             email.style.border = `red 2px solid`;
@@ -95,7 +103,9 @@
                 });
 
             } else {
-
+                 
+                errado.style.display = "block"
+                errado.style.color = `red 2px solid`
                 console.log("Houve um erro ao tentar realizar o login!");
 
                 resposta.text().then(texto => {
