@@ -4,11 +4,13 @@
     margin: 0;
     font-family: 'Playfair Display', serif;
 }
-/* body {
-  background-color: rgba(0, 0, 0, 0.976);
-   background-image: url(https://wallpaperaccess.com/full/1569677.jpg);
-
-} */
+body {
+  /* background-color: rgba(0, 0, 0, 0.976);
+   background-image: url(https://wallpaperaccess.com/full/1569677.jpg); */
+   background-image: linear-gradient(1deg, #000000 30%, transparent 150%), url(imagens/pop\ -\ image.jpg);
+   background-repeat: no-repeat;
+   background-size: 100%;
+}
 .navbar {
     /* border: red 2px solid; */
     display: flex;
@@ -37,11 +39,9 @@
 
   #pai {
     /* border: orange 2px solid; */
-    height: 99.6vh;
+    height: 120vh;
     width: auto;
-    background-image: linear-gradient(1deg, #000000 30%, transparent 150%), url(imagens/pop\ -\ image.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
+
   }
   
   li a:hover {
@@ -111,7 +111,6 @@
     height: 70vh;
     background-color: black;
     color: white;
-    /* margin-top: 15%; */
   }
 
   #caixa_camila .foto {
@@ -129,7 +128,7 @@
     /* border: red 2px solid; */
     margin-left: 20%;
     align-items: center;
-    margin-top: 15%;
+
   }
 
 
