@@ -6,7 +6,7 @@
 }
 body {
 /* background-color: rgba(0, 0, 0, 0.976); */
-background-image: linear-gradient(1deg, #000000 50%, transparent 80%), url(imagens/violino.png);
+background-image: linear-gradient(1deg, #000000 48%, transparent 80%), url(imagens/violino.png);
 background-repeat: no-repeat;
 background-size: 100%;
 }
@@ -76,7 +76,7 @@ li a:hover {
 }
 .classica p {
  /* border: white 2px solid; */
- font-size: 30px;
+ font-size: 28px;
  margin-left: 2%;
 }
 
@@ -109,6 +109,7 @@ li a:hover {
  height: 80vh;
  background-color: black;
  color: white;
+ margin-top: 10%;
 }
 
 #beethoven .foto {
@@ -137,7 +138,7 @@ li a:hover {
 
 .texto {
  /* border: white 2px solid; */
- margin-left: 150%;
- width: 130%;
- font-size: 28px;
+ margin-left: 130%;
+ width: 140%;
+ font-size: 27px;
 }
