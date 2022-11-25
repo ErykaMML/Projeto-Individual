@@ -283,31 +283,29 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    flex-direction: column;
 }
 
 .imgs {
-    margin-top: 7%;
+    /* border: red 2px solid; */
+    width: 10%;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 3%;
 }
 
 .nomes {
-    margin-top:4%;
-    /* border: white 2px solid; */
+    padding-top: 30px;
+    margin-top: -30px;
+    border-top: white 1px solid;
     display: flex;
-    justify-content: center;
     color: white;
-
+    width: 1000px;
+    justify-content: center;
 }
 
-#logo2 {
-    margin-left: 500px;
-    align-items: center;
-    border: red 2px solid;
-    margin-bottom: 5%;
-}
 #linha {
-    width: 3000px;
-    border:white 1px solid ;
+    width: 1300px;
+    border: white 1px solid;
+    margin-bottom: -10px;
 }
