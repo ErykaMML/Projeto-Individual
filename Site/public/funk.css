@@ -96,7 +96,7 @@ li a:hover {
  justify-content: center;
  margin-bottom: 3%;
  font-size: 40px;
- margin-top: 1%;
+ margin-top: 10%;
 }
 .instrumento p {
  /* border: white 2px solid; */
@@ -150,9 +150,10 @@ top: 40px;
 
 }
 
+
 .footer {
-  border: red 2px solid;
-  height: 20vh;
+  /* border: red 2px solid; */
+  height: 15vh;
   background-color: #000000;
   display: flex;
   justify-content: center;

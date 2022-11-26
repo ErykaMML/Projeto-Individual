@@ -108,9 +108,10 @@ body {
 
   #caixa_camila {
     /* border: red 2px solid; */
-    height: 70vh;
+    height: 65vh;
     background-color: black;
     color: white;
+    padding-bottom: 10%;
   }
 
   #caixa_camila .foto {
@@ -140,8 +141,8 @@ body {
   }
 
   .footer {
-    border: red 2px solid;
-    height: 20vh;
+    /* border: red 2px solid; */
+    height: 15vh;
     background-color: #000000;
     display: flex;
     justify-content: center;

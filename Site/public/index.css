@@ -277,7 +277,7 @@ span{
 }
 
 .footer {
-    border: red 2px solid;
+    /* border: red 2px solid; */
     height: 20vh;
     background-color: #000000;
     display: flex;

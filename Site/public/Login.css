@@ -153,13 +153,14 @@ button:hover {
 }
 
 .footer {
-  border: red 2px solid;
-  height: 20vh;
+  /* border: red 2px solid; */
+  height: 15vh;
   background-color: #000000;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: 2%;
 }
 
 .imgs {

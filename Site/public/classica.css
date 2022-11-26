@@ -115,7 +115,7 @@ li a:hover {
 #beethoven .foto {
  /* border: white 2px solid; */
  width: 30%;
- height: 500px;
+ height: 550px;
  background-image: url(https://www.coladaweb.com/wp-content/uploads/2019/07/20190708-beethoven.jpg);
  background-repeat: no-repeat;
  background-size: 100%;
@@ -144,7 +144,7 @@ li a:hover {
 }
 
 .footer {
-  border: red 2px solid;
+  /* border: red 2px solid; */
   height: 20vh;
   background-color: #000000;
   display: flex;
