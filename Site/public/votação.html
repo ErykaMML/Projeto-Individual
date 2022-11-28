@@ -10,9 +10,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+</style>
 
-
-<body onload="verificar()">
+<body onload="verificar(), ranking(), soma()" >
     
     <!-- home -->
     <div id="pai">
@@ -53,18 +55,35 @@
                         <span style="display:none;" id="voltar">Voltar para o <a href="index.html"> <b>site</b></a></span>
                     </div>
                 </div>
-            </div>
-                <div>
-                   <h1>Ranking:</h1> 
-                </div>
-
+                <div class="ranking">
+                    <h1><i>Contagem de votos</i></h1>
+                    <h2>Soma totais dos votos: <span id="somar">0</span></h2>
+                    <h4>Pop: <span id="pop">0</span></h4>
+                    <h4>R&B: <span id="blue">0</span></h4>
+                    <h4>Funk: <span id="funk">0</span></h4>
+                    <h4>Rock: <span id="rock">0</span></h4>
+                    <h4>Sertanejo: <span id="sert">0</span></h4>
+                    <h4>Rap: <span id="rap">0</span></h4>
+                    <h4>Forró: <span id="forro">0</span></h4>
+                    <h4>Clássica: <span id="classica">0</span></h4>
+                 </div>
+                
         </div>
     </div>
+</div>
+
+
     <div class="footer">
         <div class="imgs">
+        <div class="imgs">
+    <a href="https://open.spotify.com/playlist/0BsCD4bPdEnBFbIysd3Rkn?si=6aa873f06d4341eb">
         <img src="imagens/icon - spotify.png" height="40px">
+    </a>
+    <a href="https://github.com/ErykaMML">
         <img src="imagens/icon - git.png" height="40px">
+    </a>
         <img src="imagens/icon - gmail.png" height="40px">
+    </div>
     </div>
         <div class="nomes">
             &copy; All rights reserved
@@ -74,6 +93,7 @@
 </body>
 </html>
 <script>
+
     var idusuario = sessionStorage.ID_USUARIO
     function verificar() {
         console.log(idusuario)
@@ -118,7 +138,9 @@
 
             if (resposta.ok) {
                 nome.value = ``
+                ranking()
                 verificar()
+                soma()
                 console.log(`registrados`)
                 block.disabled = true
             } else {
@@ -133,11 +155,33 @@
 
     function ranking() {
 
+        var genero = [pop, blue, funk, rock, sert, rap, forro,classica]
+
+
         fetch(`/usuarios/ranking`, { cache: 'no-store' }).then(function (response) {
             if (response.ok) {
                 response.json().then(function (resposta) {
                     console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
 
+                    for (let index = 0; index < resposta.length; index++) {
+                            genero[resposta[index].fkgenero -1 ].innerHTML = resposta[index].Cada
+                    }
+                });
+            } else {
+                console.error('Nenhum dado encontrado ou erro na API');
+            }
+        })
+            .catch(function (error) {
+                console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
+            });
+    }
+
+    function soma() {
+        fetch(`/usuarios/soma`, { cache: 'no-store' }).then(function (response) {
+            if (response.ok) {
+                response.json().then(function (resposta) {
+                    console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
+                    somar.innerHTML = resposta[0].Total
                 });
             } else {
                 console.error('Nenhum dado encontrado ou erro na API');

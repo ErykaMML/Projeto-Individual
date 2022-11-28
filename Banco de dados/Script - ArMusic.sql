@@ -62,5 +62,5 @@ JOIN genero ON idgenero = fkgenero;
 
 SELECT count(fkgenero) AS `Total de votos` FROM votos;
 
-    SELECT votos.fkgenero, count(fkgenero) AS 'Votos de cada gênero' FROM votos GROUP BY fkgenero;
+    SELECT votos.fkgenero, count(fkgenero) AS 'Cada' FROM votos GROUP BY fkgenero;
 

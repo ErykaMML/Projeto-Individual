@@ -18,6 +18,12 @@ router.get("/ranking", function (req, res) {
     usuarioController.ranking(req, res);
 });
 
+
+router.get("/soma", function (req, res) {
+    usuarioController.soma(req, res);
+});
+
+
 //Recebendo os dados do html e direcionando para a função cadastrar de usuarioController.js
 router.post("/cadastrar", function (req, res) {
     usuarioController.cadastrar(req, res);

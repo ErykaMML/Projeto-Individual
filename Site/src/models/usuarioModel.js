@@ -41,7 +41,14 @@ function votar(idusuario, idgenero) {
 
 function ranking() {
     var instrucao = `
-    SELECT votos.fkgenero, count(fkgenero) AS 'Votos de cada gênero' FROM votos GROUP BY fkgenero;
+    SELECT votos.fkgenero, count(fkgenero) AS 'Cada' FROM votos GROUP BY fkgenero;
+    `;
+    return database.executar(instrucao);
+}
+
+function soma() {
+    var instrucao = `
+    SELECT count(fkgenero) AS 'Total' FROM votos;
     `;
     return database.executar(instrucao);
 }
@@ -66,4 +73,5 @@ module.exports = {
     verificar,
     votar,
     ranking,
+    soma,
 };

@@ -1,12 +1,12 @@
 * {
     border: 0;
     margin: 0;
-    font-family: "Times New Roman", serif;
-  }
+    font-family: 'Playfair Display', serif;  }
   
   body {
     background-color: black;
     color: white;
+    height: 100%;
   }
   
   .navbar {
@@ -22,7 +22,7 @@
   
   .logo {
     /* border: red 2px solid; */
-    margin-right: 75%;
+    margin-right: 85%;
   }
   
   .navbar li {
@@ -42,30 +42,22 @@
   }
   
   .container {
-    border: red 2px solid;
+    /* border: red 2px solid; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 50vh;
   }
   
-  .login {
-    border: white 2px solid;
+  
+  .login {    
     width: 400px;
-    height: 440px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  
-  .login {
-    border: purple;
+    height: 46vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 20px;
     background-color: rgba(255, 255, 255, 0.884);
     border-radius: 15px;
     box-shadow: rgba(2, 251, 43, 0.3) 0px 54px 55px,
@@ -142,13 +134,14 @@
 }
 
 .footer {
-  border: red 2px solid;
+  /* border: red 2px solid; */
   height: 20vh;
   background-color: #000000;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: 10%;
 }
 
 .imgs {
@@ -174,4 +167,48 @@
   border: white 1px solid;
   margin-bottom: -10px;
 }
-  
+
+.ranking {
+  height: 40vh;
+  width: 27%;
+  align-self: baseline;
+  border: purple;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.884);
+  border-radius: 15px;
+  box-shadow: rgba(2, 251, 43, 0.3) 0px 54px 55px,
+  rgba(5, 36, 240, 0.997) 0px -12px 30px, rgba(17, 11, 199, 0.299) 0px 4px 6px,
+  rgba(18, 185, 57, 0.615) 0px 12px 13px, rgba(9, 203, 99, 0.623) 0px -3px 5px;
+}
+
+.ranking h1 {
+  margin-top: 5%;
+  margin-bottom: 2%;
+  display: flex;
+  justify-content: center;
+  color: #000000;
+  line-height:42px;
+}
+
+.ranking h4 {
+  margin-left: 3%;
+  font-size: 25px;
+  color: rgb(96, 103, 109);
+}
+
+.ranking h2 {
+  margin-left: 3%;
+  font-size: 25px;
+  color: rgb(96, 103, 109);
+}
+
+#caixa {
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.ranking span {
+  color: black;
+}
